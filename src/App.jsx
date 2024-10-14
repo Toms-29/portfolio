@@ -1,0 +1,19 @@
+import './STYLES/App.css'
+import Header from './components/PRESENTATION/Header'
+import Main from './components/PRESENTATION/Main'
+import Aside from './components/PRESENTATION/Aside'
+import Footer from './components/PRESENTATION/Footer'
+
+function App() {
+
+    return (
+        <>
+            <Header></Header>
+            <Main></Main>
+            <Aside></Aside>
+            <Footer></Footer>
+        </>
+    )
+}
+
+export default App
