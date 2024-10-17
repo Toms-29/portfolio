@@ -1,4 +1,4 @@
-import IconsList from '../CONTAINER/IconsList'
+import Links from '../CONTAINER/Links'
 
 function Footer() {
 
@@ -8,11 +8,7 @@ function Footer() {
                 <section className='w-11/12 sm:w-2/4 flex flex-col gap-3 m-5'>
                     <article className='flex items-center justify-between'>
                         <h3>Contactame: </h3>
-                        <IconsList
-                            category='network'
-                            boxStyle='flex flex-wrap gap-2 justify-center'
-                            iconStyle='w-10'>
-                        </IconsList>
+                        
                     </article>
 
 
