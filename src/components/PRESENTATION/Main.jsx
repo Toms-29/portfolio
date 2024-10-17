@@ -20,7 +20,7 @@ function Main() {
                         <p>
                             Estoy listo para enfrentar desafíos profesionalmente.
                             Si estás interesado, no dudes en contactarme, sería un placer contribuir al crecimiento de tu equipo,
-                            aportar mis habilidades y seguir aprendiendo en un entorno colaborativo.
+                            aportar mis habilidades y seguir creciendo en un entorno colaborativo.
                             Estoy convencido de que juntos podemos crear soluciones innovadoras y marcar la diferencia en cada proyecto.
                         </p>
                     </article>

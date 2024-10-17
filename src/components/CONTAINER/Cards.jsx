@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 
 
 const Cards = ({ cards, cardStyle, descriptionStyle }) => {
