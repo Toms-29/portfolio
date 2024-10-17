@@ -1,20 +1,16 @@
-import IconsList from "./IconsList"
 
-const Links = () => {
+
+const Links = ( {link, imgSrc, imgAlt} ) => {
 
     return (
         <>
             <a
-                href=""
+                href={link}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Gmail"
             >
-                <IconsList
-                    category='network'
-                    boxStyle='flex flex-wrap gap-2 justify-center'
-                    iconStyle='w-10'>
-                </IconsList>
+                <img src={imgSrc} alt={imgAlt} />
             </a>
         </>
     )
