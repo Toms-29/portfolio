@@ -1,6 +1,6 @@
 
 
-const Links = ({ link, imgSrc, arialLabel, imgStyle, boxStyle } ) => {
+const Link = ({ link, imgSrc, arialLabel, imgStyle, boxStyle } ) => {
 
     return (
         <>
@@ -18,4 +18,4 @@ const Links = ({ link, imgSrc, arialLabel, imgStyle, boxStyle } ) => {
     )
 }
 
-export default Links
+export default Link

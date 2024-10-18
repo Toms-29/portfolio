@@ -26,7 +26,7 @@ function Main() {
                     </article>
 
                     {/* Curriculum */}
-                    <article className='flex flex-col justify-center items-center max-w-'>
+                    <article className='flex flex-col justify-center items-center'>
                         <h2>Curriculum:</h2>
                         <DownloadButton
                             category='files' >
