@@ -1,17 +1,19 @@
 
 
-const Links = ({ link, imgSrc, arialLabel }) => {
+const Links = ({ link, imgSrc, arialLabel, imgStyle, boxStyle } ) => {
 
     return (
         <>
-            <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={arialLabel}
-            >
-                <img src={imgSrc} />
-            </a>
+            <div className={boxStyle}>
+                <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={arialLabel}
+                >
+                    <img src={imgSrc} className={imgStyle} />
+                </a>
+            </div>
         </>
     )
 }
