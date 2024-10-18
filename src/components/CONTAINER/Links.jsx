@@ -1,6 +1,6 @@
 
 
-const Links = ( {link, imgSrc, imgAlt} ) => {
+const Links = ({ link, imgSrc, arialLabel }) => {
 
     return (
         <>
@@ -8,9 +8,9 @@ const Links = ( {link, imgSrc, imgAlt} ) => {
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Gmail"
+                aria-label={arialLabel}
             >
-                <img src={imgSrc} alt={imgAlt} />
+                <img src={imgSrc} />
             </a>
         </>
     )
