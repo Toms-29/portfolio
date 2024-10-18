@@ -87,14 +87,6 @@ const assets = {
             src: '../public/assets/images/whatsapp.png',
             alt: 'Icono de WhatsApp'
         }
-    ],
-
-    files: [
-        {
-            id: 13,
-            name: 'curriculum',
-            href: '../public/assets/files/ejemplo_cv.txt'
-        },
     ]
 
 }
