@@ -5,8 +5,8 @@ function Footer() {
 
     return (
         <>
-            <footer className='w-screen bg-gray-900 flex justify-center items-center'>
-                <section className='w-11/12 sm:w-2/4 flex flex-col gap-3 my-5'>
+            <footer className='w-full bg-gray-900 flex justify-center items-center'>
+                <section className='w-11/12 sm:w-3/4 flex flex-col gap-3 my-5'>
                     <article className='flex items-center justify-between'>
                         <h3>Contactame: </h3>
                         <section className='flex flex-row items-center gap-4'>

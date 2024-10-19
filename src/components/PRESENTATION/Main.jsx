@@ -6,7 +6,7 @@ function Main() {
 
     return (
         <>
-            <main className='w-screen flex items-center justify-center'>
+            <main className='w-full flex items-center justify-center'>
                 <section className='w-11/12 flex flex-col items-center gap-5 sm:w-3/4'>
                     {/* Sobre mi */}
                     <article className='text-center tracking-wider md:max-w-2xl'>
