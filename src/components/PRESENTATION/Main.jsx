@@ -22,20 +22,23 @@ function Main() {
                         <br />
                         <p>
                             Ya que el mundo IT crece de manera rapida y constante, uno debe mantenerce informado para no quedarce en el camino,
-                            en mi caso me matengo actualizado con newslwtters como Daily.dev y comunidades de devs como FrontendCafe.
+                            en mi caso me matengo actualizado con newslwtters como <span className='text-rose-600'> Daily.dev </span>
+                             y comunidades de devs como <span className='text-emerald-300'> FrontendCafe </span> .
                         </p>
                         <br />
                         <p>
                             Estoy entusiasmado por enfrentar desafíos profesionalmente y desarrollar nuevos proyectos.
                             Si estás interesado, no dudes en contactarme, sería un placer contribuir al crecimiento de tu equipo,
                             aportar mis habilidades y seguir creciendo en un entorno colaborativo.
-                            Estoy convencido de que juntos podemos crear soluciones innovadoras y marcar la diferencia en cada proyecto.
+                            Estoy convencido de que <span className='text-blue-600'> juntos </span>  podemos 
+                            crear soluciones innovadoras y marcar la diferencia en cada proyecto.
                         </p>
                     </article>
 
                     {/* Curriculum */}
                     <article className='flex flex-col justify-center items-center'>
-                        <h2>Curriculum:</h2>
+                        <img className='w-48' src="../../../public/assets/images/img_curriculum.png" alt="Curriculum" />
+                        <br />
                         <DownloadButton
                             category='files' >
                         </DownloadButton>
