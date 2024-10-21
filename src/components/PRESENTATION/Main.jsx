@@ -37,14 +37,14 @@ function Main() {
 
                     {/* Curriculum */}
                     <article className='flex flex-col justify-center items-center '>
-                        <img className='w-48' src="../../../public/assets/images/cartel_curriculum.png" alt="Cartel de Curriculum" />
+                        <img className='w-52' src="../../../public/assets/images/cartel_curriculum.png" alt="Cartel de Curriculum" />
                         <br />
                         <DownloadButton
                             buttonStyle='py-3 px-5 rounded-3xl font-extrabold text-blue-800 border-4 border-blue-800 hover:text-white hover:bg-blue-600'
                             category='files' >
                         </DownloadButton>
                     </article>
-
+                    
                     {/* Tecnologias */}
                     <article className='flex flex-col items-center gap-4'>
                         <img className='w-52' src="../../../public/assets/images/cartel_tecnologias.png" alt="Cartel de Tecnologias" />

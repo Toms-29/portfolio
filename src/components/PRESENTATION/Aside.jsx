@@ -12,7 +12,7 @@ function Aside() {
         <>
             <aside className='w-full flex items-center justify-center'>
                 <section className='w-11/12 sm:w-3/4 flex flex-col items-center gap-5'>
-                    <h2>Proyectos:</h2>
+                    <img className='w-52' src="../../../public/assets/images/cartel_proyectos.png" alt="Cartel de Proyectos" />
                     <div className='flex flex-wrap items-center justify-center gap-5 md:max-w-4xl'>
                         <Cards cards={cards}
                             cardStyle="w-64 sm:w-96 p-2 border-2 border-b-neutral-700 border-r-neutral-500 rounded-br-xl"
