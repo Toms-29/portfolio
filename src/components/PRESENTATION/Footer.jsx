@@ -14,21 +14,21 @@ function Footer() {
                                 link='https://wa.me/541150955469'
                                 imgSrc='../../../public/assets/images/whatsapp.png'
                                 boxStyle='w-12'
-                                imgStyle='w-12'
+                                imgStyle='w-12 hover:drop-shadow-green'
                                 arialLabel='Link a WhatsApp'>
                             </Link>
                             <Link
                                 link='https://mail.google.com/mail/?view=cm&fs=1&to=gamezmatiastomas@gmail.com'
                                 imgSrc='../../../public/assets/images/gmail.png'
                                 boxStyle='w-12'
-                                imgStyle='w-12'
+                                imgStyle='w-12 hover:drop-shadow-pink'
                                 arialLabel='Link a Gmail'>
                             </Link>
                             <Link
                                 link='https://www.linkedin.com/in/tomasgamez/'
                                 imgSrc='../../../public/assets/images/linkedin.png'
                                 boxStyle='w-12'
-                                imgStyle='w-12'
+                                imgStyle='w-12 hover:drop-shadow-sky'
                                 arialLabel='Link a LinkedIn'>
                             </Link>
                         </section>

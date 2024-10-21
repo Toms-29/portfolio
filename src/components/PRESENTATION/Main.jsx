@@ -51,7 +51,7 @@ function Main() {
                         <IconsList
                             category='technology'
                             boxStyle='flex flex-wrap gap-2 justify-center max-w-xs md:max-w-lg'
-                            iconStyle='w-20 drop-shadow-colored' >
+                            iconStyle='w-20 drop-shadow-white' >
                         </IconsList>
                     </article>
 
