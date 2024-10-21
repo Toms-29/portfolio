@@ -18,7 +18,14 @@ body {
     flex-direction: column;
 }
 
-
+.ligthTheme {
+    background-color: white;
+    color: black;
+}
+.darkTheme {
+    background-color: black;
+    color: white;
+}
 
 /* 
 DISEÑO POR DEFECTO : 320px - 480px
