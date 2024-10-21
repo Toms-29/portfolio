@@ -7,7 +7,22 @@ export default {
     theme: {
         extend: {
             dropShadow: {
-                'colored': '2px 5px 15px rgba(255, 255, 255, 0.5)',
+                'white': '2px 5px 15px rgba(255, 255, 255, 0.4)',
+              },
+            dropShadow: {
+                'orange': '2px 5px 15px rgba(255, 87, 51, 0.4)',
+              },
+            dropShadow: {
+                'sky': '2px 5px 15px rgba(0, 171, 213, 0.4)',
+              },
+            dropShadow: {
+                'yellow': '2px 5px 15px rgba(255, 236, 0, 0.4)',
+              },
+            dropShadow: {
+                'green': '2px 5px 15px rgba(0, 255, 120, 0.4)',
+              },
+            dropShadow: {
+                'pink': '2px 5px 15px rgba(255, 0, 85, 0.4)',
               },
         },
     },
