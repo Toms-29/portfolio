@@ -2,7 +2,7 @@ import DownloadButton from '../CONTAINER/DownloadButton'
 import IconsList from '../CONTAINER/IconsList'
 
 
-function Main({ theme }) {
+function Main() {
 
     return (
         <>

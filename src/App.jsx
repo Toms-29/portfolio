@@ -22,7 +22,7 @@ function App() {
 
     return (
         <>
-            <Header toggleTheme={toggleTheme}></Header>
+            <Header toggleTheme={toggleTheme} theme={theme}></Header>
             <Main></Main>
             <Aside></Aside>
             <Footer></Footer>
