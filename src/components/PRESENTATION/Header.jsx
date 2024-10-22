@@ -11,7 +11,7 @@ function Header({ toggleTheme, theme }) {
 
                     <Link
                         link='https://github.com/Toms-29'
-                        imgSrc='../../../public/assets/images/github.png'
+                        imgSrc='./assets/images/github.png'
                         boxStyle='w-12'
                         imgStyle='w-12 hover:drop-shadow-white'
                         arialLabel='Link a GitHub'>

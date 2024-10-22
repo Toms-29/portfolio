@@ -7,7 +7,7 @@ function Main() {
     return (
         <>
             <main className='w-full flex items-center justify-center'>
-                <section className='w-11/12 flex flex-col items-center gap-5 md:w-2/4 shadow-xl rounded-2xl px-20 pb-10'>
+                <section className='w-11/12 flex flex-col items-center gap-5 md:w-2/4 sm:shadow-xl sm:rounded-2xl sm:px-20 pb-10'>
                     {/* Sobre mi */}
                     <article className='text-center tracking-wider md:max-w-2xl'>
                         <h1 className=' text-3xl font-semibold'>¡Hola soy
@@ -37,7 +37,7 @@ function Main() {
 
                     {/* Curriculum */}
                     <article className='flex flex-col justify-center items-center '>
-                        <img className='w-52' src="../../../public/assets/images/cartel_curriculum.png" alt="Cartel de Curriculum" />
+                        <img className='w-52' src="./assets/images/cartel_curriculum.png" alt="Cartel de Curriculum" />
                         <br />
                         <DownloadButton
                             buttonStyle='py-3 px-5 rounded-3xl font-extrabold text-blue-800 border-4 border-blue-800 hover:text-white hover:bg-blue-600'
@@ -47,7 +47,7 @@ function Main() {
 
                     {/* Tecnologias */}
                     <article className='flex flex-col items-center gap-4'>
-                        <img className='w-52' src="../../../public/assets/images/cartel_tecnologias.png" alt="Cartel de Tecnologias" />
+                        <img className='w-52' src="./assets/images/cartel_tecnologias.png" alt="Cartel de Tecnologias" />
                         <IconsList
                             category='technology'
                             boxStyle='flex flex-wrap gap-2 justify-center max-w-xs md:max-w-lg'
