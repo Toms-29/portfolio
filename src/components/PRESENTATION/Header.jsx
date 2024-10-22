@@ -1,13 +1,13 @@
 import Link from "../CONTAINER/Links"
-import ThemeButton from "../CONTAINER/themeButton"
+import ThemeButton from "../CONTAINER/ThemeButton"
 
-function Header() {
+function Header({ toggleTheme }) {
 
     return (
         <>
             <header className="w-full flex h-20 bg-teal-600 justify-center items-center border-4 border-b-gray-700 border-r-0 border-t-0 border-l-0">
                 <nav className="w-11/12 sm:w-3/4 flex justify-end">
-                    <ThemeButton></ThemeButton>
+                    <ThemeButton toggleTheme={toggleTheme}></ThemeButton>
 
                     <Link
                         link='https://github.com/Toms-29'

@@ -8,7 +8,7 @@ function Footer() {
             <footer className='w-full bg-gray-900 flex justify-center items-center'>
                 <section className='w-11/12 sm:w-3/4 flex flex-col gap-3 my-5'>
                     <article className='flex items-center justify-between'>
-                        <h3>Contactame: </h3>
+                        <h3 className='text-white'>Contacto: </h3>
                         <section className='flex flex-row items-center gap-4'>
                             <Link
                                 link='https://wa.me/541150955469'
@@ -36,7 +36,7 @@ function Footer() {
 
 
                     <article>
-                        <h3>Iconos:</h3>
+                        <h3 className='text-white'>Iconos:</h3>
                         <ul className='text-sm text-sky-500'>
                             <li>
                                 <a className='hover:text-white' target="_blank" href="https://www.flaticon.es/">Flaticon</a>

@@ -1,16 +1,7 @@
-import { useState, useEffect } from "react"
 
-const ThemeButton = () => {
 
-    const [theme, setTheme] = useState('darkTheme')
+const ThemeButton = ({toggleTheme}) => {
 
-    const toggleTheme = () => {
-        setTheme((prevTheme) => (prevTheme === 'darkTheme' ? 'ligthTheme' : 'darkTheme'))
-    }
-
-    useEffect(() => {
-        document.body.className = theme;
-    }, [theme])
 
     return (
         <>

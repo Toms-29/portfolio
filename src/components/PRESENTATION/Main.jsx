@@ -2,7 +2,7 @@ import DownloadButton from '../CONTAINER/DownloadButton'
 import IconsList from '../CONTAINER/IconsList'
 
 
-function Main() {
+function Main({ theme }) {
 
     return (
         <>
@@ -44,7 +44,7 @@ function Main() {
                             category='files' >
                         </DownloadButton>
                     </article>
-                    
+
                     {/* Tecnologias */}
                     <article className='flex flex-col items-center gap-4'>
                         <img className='w-52' src="../../../public/assets/images/cartel_tecnologias.png" alt="Cartel de Tecnologias" />

@@ -1,6 +1,6 @@
 import Cards from '../CONTAINER/Cards'
 
-function Aside() {
+function Aside({ theme }) {
     const cards = [
         { id: 12, title: 'Titulo', descripcion: 'hola', img: '' },
         { id: 13, title: 'Titulo', descripcion: 'como estas', img: '' },
