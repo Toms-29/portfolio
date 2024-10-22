@@ -2,10 +2,10 @@ import Cards from '../CONTAINER/Cards'
 
 function Aside() {
     const cards = [
-        { id: 12, title: 'Titulo', descripcion: 'hola', img: '' },
-        { id: 13, title: 'Titulo', descripcion: 'como estas', img: '' },
-        { id: 14, title: 'Titulo', descripcion: 'bueno', img: '' },
-        { id: 15, title: 'Titulo', descripcion: 'chau', img: '' }
+        { id: 12, title: 'Titulo', descripcion: 'En desarrollo', img: '' },
+        { id: 13, title: 'Titulo', descripcion: 'En desarrollo', img: '' },
+        { id: 14, title: 'Titulo', descripcion: 'En desarrollo', img: '' },
+        { id: 15, title: 'Titulo', descripcion: 'En desarrollo', img: '' }
     ]
 
     return (
@@ -16,7 +16,7 @@ function Aside() {
                     <div className='flex flex-wrap items-center justify-center gap-5 md:max-w-4xl'>
                         <Cards cards={cards}
                             cardStyle="w-64 sm:w-96 p-2 border-2 border-b-neutral-700 border-r-neutral-500 rounded-br-xl shadow-xl"
-                            descriptionStyle="border-t-2 border-t-neutral-700" >
+                            descriptionStyle="border-t-2 border-t-neutral-700 bg-black text-white rounded-br-xl py-2 px-4" >
                         </Cards>
                     </div>
                 </section>

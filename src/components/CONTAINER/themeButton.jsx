@@ -16,7 +16,7 @@ const ThemeButton = ({ toggleTheme, theme }) => {
     return (
         <>
             <button onClick={toggleTheme}>
-                <img src={img_mode} alt='Boton para cambiar el tema ' />
+                <img className='w-12 hover:drop-shadow-white' src={img_mode} alt='Boton para cambiar el tema ' />
             </button>
 
 

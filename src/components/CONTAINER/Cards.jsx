@@ -7,9 +7,9 @@ const Cards = ({ cards, cardStyle, descriptionStyle }) => {
         <>
             {cards.map(card => (
                 <article className={cardStyle} key={card.id}>
-                    <picture>
-                        <img src={card.img} alt="Imagen de tal proyecto" className="h-44" />
-                    </picture>
+                    <div className="h-44 flex justify-center items-center">
+                        <img src={card.img} alt="Proyecto en desarrollo" />
+                    </div>
                     <div className={descriptionStyle}>
                         <h3>{card.title}</h3>
                         <p>{card.descripcion}</p>

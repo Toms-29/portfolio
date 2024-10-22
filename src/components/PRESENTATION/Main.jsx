@@ -7,7 +7,7 @@ function Main() {
     return (
         <>
             <main className='w-full flex items-center justify-center'>
-                <section className='w-11/12 flex flex-col items-center gap-5 sm:w-3/4'>
+                <section className='w-11/12 flex flex-col items-center gap-5 md:w-2/4 shadow-xl rounded-2xl px-20 pb-10'>
                     {/* Sobre mi */}
                     <article className='text-center tracking-wider md:max-w-2xl'>
                         <h1 className=' text-3xl font-semibold'>¡Hola soy
