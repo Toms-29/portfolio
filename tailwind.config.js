@@ -13,7 +13,7 @@ export default {
                 'yellow': '2px 5px 15px rgba(255, 236, 0, 0.4)',
                 'green': '2px 5px 15px rgba(0, 255, 120, 0.4)',
                 'pink': '2px 5px 15px rgba(255, 0, 85, 0.4)'
-            },
+            }
         },
     },
     plugins: [],

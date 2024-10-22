@@ -33,6 +33,7 @@ body {
 .darkTheme {
     background-color: black;
     color: white;
+
     display: flex;
     align-items: center;
     flex: 1 1 0%;
