@@ -1,93 +1,88 @@
 const assets = {
-    technology: [
-        {
+    technology: {
+        javascript: {
             id: 1,
-            name: 'javascript',
             src: './assets/images/javascript.png',
             alt: 'Icono de JavaScript'
         },
 
-        {
+        react: {
             id: 2,
-            name: 'react',
             src: './assets/images/react.png',
             alt: 'Icono de ReactJS'
         },
 
-        {
+        html: {
             id: 3,
-            name: 'html',
             src: './assets/images/html.png',
             alt: 'Icono de HTML'
         },
 
-        {
+        css: {
             id: 4,
-            name: 'css',
             src: './assets/images/css.png',
             alt: 'Icono de CSS'
         },
 
-        {
+        sass: {
             id: 5,
-            name: 'sass',
             src: './assets/images/sass.png',
             alt: 'Icono de SASS'
         },
 
-        {
+        bootstrap: {
             id: 6,
-            name: 'bootstrap',
             src: './assets/images/bootstrap.png',
             alt: 'Icono de Bootstrap'
         },
 
-        {
+        tailwind: {
             id: 7,
-            name: 'tailwind',
             src: './assets/images/tailwind.png',
             alt: 'Icono de Tailwind'
         },
 
-        {
+        git: {
             id: 8,
-            name: 'git',
             src: './assets/images/git.png',
             alt: 'Icono de Git'
         },
 
-        {
+        github: {
             id: 9,
-            name: 'github',
             src: './assets/images/github.png',
             alt: 'Icono de GitHub'
         }
 
-    ],
+    },
 
 
-    network: [
-        {
+    network: {
+        linkedin: {
             id: 10,
-            name: 'linkedin',
             src: './assets/images/linkedin.png',
             alt: 'Icono de LinkedIn'
         },
 
-        {
+        gmail: {
             id: 11,
-            name: 'gmail',
             src: './assets/images/gmail.png',
             alt: 'Icono de Gmail'
         },
 
-        {
+        whatsapp: {
             id: 12,
-            name: 'whatsapp',
             src: './assets/images/whatsapp.png',
             alt: 'Icono de WhatsApp'
         }
-    ]
+    },
+
+    files : {
+        curriculum : {
+            id : 13,
+            src : '/assets/files/ejemplo_cv.txt'
+        }
+    }
 
 }
 
