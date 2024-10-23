@@ -39,15 +39,6 @@ function Main() {
                         </p>
                     </article>
 
-                    {/* Curriculum */}
-                    <article className='flex flex-col justify-center items-center h-screen bg-orange-200'>
-                        <img className='w-52' src="./assets/images/cartel_curriculum.png" alt="Cartel de Curriculum" />
-                        <br />
-                        <DownloadButton
-                            buttonStyle='py-3 px-5 rounded-3xl font-extrabold text-blue-800 border-4 border-blue-800 hover:text-white hover:bg-blue-600'
-                            archivo={assets.files.curriculum.src}>
-                        </DownloadButton>
-                    </article>
 
                     {/* Tecnologias */}
                     <article className='flex flex-col items-center gap-4 h-screen bg-red-300'>
