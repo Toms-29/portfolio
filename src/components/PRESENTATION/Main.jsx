@@ -1,5 +1,6 @@
 import DownloadButton from '../CONTAINER/DownloadButton'
-import IconsList from '../CONTAINER/IconsList'
+// import IconsList from '../CONTAINER/IconsList'
+import assets from '../../assets'
 
 
 function Main() {
@@ -41,18 +42,18 @@ function Main() {
                         <br />
                         <DownloadButton
                             buttonStyle='py-3 px-5 rounded-3xl font-extrabold text-blue-800 border-4 border-blue-800 hover:text-white hover:bg-blue-600'
-                            category='files' >
+                            archivo={assets.files.curriculum.src}>
                         </DownloadButton>
                     </article>
 
                     {/* Tecnologias */}
                     <article className='flex flex-col items-center gap-4'>
                         <img className='w-52' src="./assets/images/cartel_tecnologias.png" alt="Cartel de Tecnologias" />
-                        <IconsList
+                        {/* <IconsList
                             category='technology'
                             boxStyle='flex flex-wrap gap-2 justify-center max-w-xs md:max-w-lg'
                             iconStyle='w-20 drop-shadow-white' >
-                        </IconsList>
+                        </IconsList> */}
                     </article>
 
                 </section>

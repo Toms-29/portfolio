@@ -1,12 +1,12 @@
 
 
-const DownloadButton = ( {buttonStyle} ) => {
+const DownloadButton = ( {buttonStyle, archivo} ) => {
 
 
     return (
         <>
             <button className={buttonStyle}>
-                <a href='/assets/files/ejemplo_cv.txt' download>
+                <a href={archivo} download>
                     Descargar CV
                 </a>
             </button>
