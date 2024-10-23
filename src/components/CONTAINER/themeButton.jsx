@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 
 const ThemeButton = ({ toggleTheme, theme }) => {
-    const ligth_mode = './assets/images/ligth_mode.png'
-    const dark_mode = './assets/images/dark_mode.png'
+    const ligth_mode = './assets/images/ligthMode_icon.png'
+    const dark_mode = './assets/images/darkMode_icon.png'
 
     const [imgMode, setImgMode] = useState(ligth_mode)
 
