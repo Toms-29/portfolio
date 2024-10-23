@@ -1,5 +1,3 @@
-import DownloadButton from '../CONTAINER/DownloadButton'
-// import IconsList from '../CONTAINER/IconsList'
 import assets from '../../assets'
 
 
@@ -41,14 +39,29 @@ function Main() {
 
 
                     {/* Tecnologias */}
-                    <article className='flex flex-col items-center gap-4 h-screen bg-red-300'>
-                        <p>hola</p>
-                        {/* <img className='w-52' src="./assets/images/cartel_tecnologias.png" alt="Cartel de Tecnologias" />
-                        <IconsList
-                            category='technology'
-                            boxStyle='flex flex-wrap gap-2 justify-center max-w-xs md:max-w-lg'
-                            iconStyle='w-20 drop-shadow-white' >
-                        </IconsList> */}
+                    <article className='flex flex-col justify-evenly w-11/12 h-screen bg-yellow-200'>
+                        <h2 className='text-center text-6xl'>Tecnologias:</h2>
+                        <div className='flex justify-around'>
+                            <p className='max-w-md max-h-max rounded-md bg-slate-50 shadow-lg px-4 py-2'>
+                                Estas son las tecnologias que utilizo para desarrollar mis proyectos.
+                                Para una vista mas tecnica podes revisar mi GitHub, en donde podras ver
+                                en detalle la utilizacion de las mismas. Si te interesa mi perfil, cualquier
+                                tecnologia o proyecto nuevo que haga llegara alli primero, asi que no te olvides
+                                de visitarlo😉!
+                            </p>
+                            <section className='flex items-center gap-3 justify-center flex-wrap max-w-md rounded-md bg-slate-50 shadow-lg py-5'>
+                                <img className='w-24 drop-shadow-yellow' src={assets.technology.javascript.src} alt="Logo de JavaScript" />
+                                <img className='w-24 drop-shadow-sky' src={assets.technology.react.src} alt="Logo de React" />
+                                <img className='w-24 drop-shadow-orange' src={assets.technology.html.src} alt="Logo de HTML" />
+                                <img className='w-24 drop-shadow-sky' src={assets.technology.css.src} alt="Logo de CSS" />
+                                <img className='w-24 drop-shadow-pink' src={assets.technology.sass.src} alt="Logo de SASS" />
+                                <img className='w-24 drop-shadow-orange' src={assets.technology.git.src} alt="Logo de Git" />
+                                <img className='w-24 drop-shadow-white' src={assets.technology.github.src} alt="Logo de GitHub" />
+                                <img className='w-24 drop-shadow-green' src={assets.technology.tailwind.src} alt="Logo de Tailwind" />
+                                <img className='w-24 drop-shadow-pink' src={assets.technology.bootstrap.src} alt="Logo de Bootstrap" />
+                            </section>
+                        </div>
+
                     </article>
 
                 </section>
