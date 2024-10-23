@@ -12,14 +12,14 @@
 html,
 body {
     height: 100%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     display: flex;
     flex-direction: column;
 }
 
 .ligthTheme {
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(180, 177, 177);
     color: black;
     font-weight: 700;
     display: flex;
@@ -31,7 +31,7 @@ body {
 
 
 .darkTheme {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
 
     display: flex;
