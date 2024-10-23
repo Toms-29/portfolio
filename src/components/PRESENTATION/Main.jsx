@@ -8,36 +8,39 @@ function Main() {
     return (
         <>
             <main className='w-full flex items-center justify-center'>
-                <section className='w-11/12 flex flex-col items-center gap-5 md:w-2/4 sm:shadow-white sm:shadow-md sm:rounded-2xl sm:px-20 pb-10'>
+                <section className='w-11/12 md:w-3/4 flex flex-col items-center gap-5 '>
                     {/* Sobre mi */}
-                    <article className='text-center tracking-wider md:max-w-2xl'>
-                        <h1 className=' text-3xl font-semibold'>¡Hola soy
-                            <span className='text-teal-600 text-3xl font-semibold'> Tomás</span>!
-                        </h1>
-                        <p>
-                            y desarrollo hace mas de dos años con <span className='text-yellow-400'> JavaScript </span>
-                            y <span className='text-sky-500'> React </span>, aplicando buenas practicas.
-                            Igualmente, continuo mejorando mis habilidades como dev, manteniendo me actualizado sobre las tecnologias y
-                            utilizando herramientas que hagan mas dinamico el trabajo con las mismas.
+                    <h1 className=' text-3xl font-semibold p-4'>¡Hola soy Tomás!</h1>
+                    <article className='flex flex-col justify-center tracking-wider w-11/12 h-screen'>
+                        <p className='max-w-lg shadow-lg rounded-md bg-slate-50 px-5 py-2'>
+                            Y desarrollo hace mas de dos años con JavaScript y React, conciente de la utilizacion de buenas practicas.
+                            Igualmente, continuo mejorando mis habilidades como dev, manteniendome actualizado sobre las
+                            tecnologias y utilizando herramientas que hagan mas dinamico el trabajo con las mismas.
                         </p>
                         <br />
-                        <p>
-                            Ya que el mundo IT crece de manera rapida y constante, uno debe mantenerce informado para no quedarce en el camino,
-                            en mi caso me matengo actualizado con newslwtters como <span className='text-rose-600'> Daily.dev </span>
-                            y comunidades de devs como <span className='text-emerald-300'> FrontendCafe </span> .
+                        <p className='max-w-lg self-end shadow-lg rounded-md bg-slate-50 px-5 py-2'>
+                            Mi camino por el mundo del desarrollo web comenzo y, por el momento, continua de forma autodidacta y
+                            de la mano de empresas que brindan becas para la capacitacion profecional, un ejemplo de ello es
+                            el programa Digitalers de la empresa Telecom con el cual me estoy especializando en el area de Fornt-End.
                         </p>
                         <br />
-                        <p>
+                        <p className='max-w-lg shadow-lg rounded-md bg-slate-50 px-5 py-2'>
+                            Ya que el mundo IT crece de manera rapida y constante, uno debe mantenerce informado para no quedarce
+                            en el camino, en mi caso me matengo actualizado con herramientas como Daily.dev y comunidades de devs
+                            como FrontendCafe .
+                        </p>
+                        <br />
+                        <p className='max-w-lg self-end shadow-lg rounded-md bg-slate-50 px-5 py-2'>
                             Estoy entusiasmado por enfrentar desafíos profesionalmente y desarrollar nuevos proyectos.
                             Si estás interesado, no dudes en contactarme, sería un placer contribuir al crecimiento de tu equipo,
                             aportar mis habilidades y seguir creciendo en un entorno colaborativo.
-                            Estoy convencido de que <span className='text-blue-600'> juntos </span>  podemos
+                            Estoy convencido de que juntos podemos
                             crear soluciones innovadoras y marcar la diferencia en cada proyecto.
                         </p>
                     </article>
 
                     {/* Curriculum */}
-                    <article className='flex flex-col justify-center items-center '>
+                    <article className='flex flex-col justify-center items-center h-screen bg-orange-200'>
                         <img className='w-52' src="./assets/images/cartel_curriculum.png" alt="Cartel de Curriculum" />
                         <br />
                         <DownloadButton
@@ -47,9 +50,10 @@ function Main() {
                     </article>
 
                     {/* Tecnologias */}
-                    <article className='flex flex-col items-center gap-4'>
-                        <img className='w-52' src="./assets/images/cartel_tecnologias.png" alt="Cartel de Tecnologias" />
-                        {/* <IconsList
+                    <article className='flex flex-col items-center gap-4 h-screen bg-red-300'>
+                        <p>hola</p>
+                        {/* <img className='w-52' src="./assets/images/cartel_tecnologias.png" alt="Cartel de Tecnologias" />
+                        <IconsList
                             category='technology'
                             boxStyle='flex flex-wrap gap-2 justify-center max-w-xs md:max-w-lg'
                             iconStyle='w-20 drop-shadow-white' >
