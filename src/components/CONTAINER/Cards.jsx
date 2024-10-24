@@ -1,21 +1,20 @@
 
 
 
-const Cards = ({ cards, cardStyle, descriptionStyle }) => {
+const Cards = ({ cardStyle, descriptionStyle, srcImg, cardTitle = 'Titulo', cardDescripcion = 'Este proyecto esta en desarrollo' }) => {
 
     return (
         <>
-            {cards.map(card => (
-                <article className={cardStyle} key={card.id}>
-                    <div className="h-44 flex justify-center items-center">
-                        <img src={card.img} alt="Proyecto en desarrollo" />
-                    </div>
-                    <div className={descriptionStyle}>
-                        <h3>{card.title}</h3>
-                        <p>{card.descripcion}</p>
-                    </div>
-                </article>
-            ))}
+            <figure className={cardStyle}>
+                <div className="h-44 flex justify-center items-center">
+                    <img src={srcImg} alt="Proyecto en desarrollo" />
+                </div>
+                <figcaption className={descriptionStyle}>
+                    <h3>{cardTitle}</h3>
+                    <p>{cardDescripcion}</p>
+                </figcaption>
+            </figure>
+
 
         </>
     )

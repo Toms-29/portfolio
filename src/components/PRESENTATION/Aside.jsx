@@ -1,27 +1,27 @@
 import Cards from '../CONTAINER/Cards'
 
 function Aside() {
-    const cards = [
-        { id: 12, title: 'Titulo', descripcion: 'En desarrollo', img: '' },
-        { id: 13, title: 'Titulo', descripcion: 'En desarrollo', img: '' },
-        { id: 14, title: 'Titulo', descripcion: 'En desarrollo', img: '' },
-        { id: 15, title: 'Titulo', descripcion: 'En desarrollo', img: '' }
-    ]
 
     return (
         <>
-            <aside className='w-full flex items-center justify-center bg-sky-600'>
-                <section className='w-11/12 sm:w-3/4 flex flex-col items-center gap-5 h-screen'>
-                    <p>hola</p>
+            <aside className='w-full h-screen flex items-center justify-end bg-sky-600'>
+                <article className='w-11/12 h-3/4 rounded-l-3xl bg-slate-50 sm:w-4/5 flex flex-col gap-5 '>
+                    <h2 className='p-12 text-4xl'>Proyectos:</h2>
 
-                    {/* <img className='w-52' src="./assets/images/cartel_proyectos.png" alt="Cartel de Proyectos" />
-                    <div className='flex flex-wrap items-center justify-center gap-5 md:max-w-4xl'>
-                        <Cards cards={cards}
-                            cardStyle="w-64 sm:w-96 p-2 border-2 border-b-neutral-700 border-r-neutral-500 rounded-br-xl shadow-xl"
+                    <section className='flex items-center justify-around md:max-w-full'>
+                        <p className='max-w-md max-h-max rounded-md bg-slate-100 shadow-lg px-4 py-2'>
+                            Los proyectos! Son de las primeras cosas que se mira en los programadores. 
+                            Importantes! ya que demuetran la forma en la que trabajamos con las herramientas que utilizamos.
+                            Por ello y mas razones, en esta seccion, se encontraran los proyectos que ire desarrollando junto a una brebe 
+                            descripcion de ellos, si estas interesado podras visitarlos haciendo click sobre ellos.
+                        </p>
+
+                        <Cards
+                            cardStyle="w-64 sm:w-96 p-2 border-2 border-b-neutral-700 border-r-neutral-500 rounded-br-xl bg-slate-200 shadow-xl"
                             descriptionStyle="border-t-2 border-t-neutral-700 bg-black text-white rounded-br-xl py-2 px-4" >
                         </Cards>
-                    </div> */}
-                </section>
+                    </section>
+                </article>
 
             </aside>
 
