@@ -1,4 +1,5 @@
 import Cards from '../CONTAINER/Cards'
+import Carrusel from '../CONTAINER/Carrusel'
 
 function Aside() {
 
@@ -10,9 +11,9 @@ function Aside() {
 
                     <section className='flex items-center justify-around md:max-w-full'>
                         <p className='max-w-md max-h-max rounded-md bg-slate-100 shadow-lg px-4 py-2'>
-                            Los proyectos! Son de las primeras cosas que se mira en los programadores. 
+                            Los proyectos! Son de las primeras cosas que se mira en los programadores.
                             Importantes! ya que demuetran la forma en la que trabajamos con las herramientas que utilizamos.
-                            Por ello y mas razones, en esta seccion, se encontraran los proyectos que ire desarrollando junto a una brebe 
+                            Por ello y mas razones, en esta seccion, se encontraran los proyectos que ire desarrollando junto a una brebe
                             descripcion de ellos, si estas interesado podras visitarlos haciendo click sobre ellos.
                         </p>
 
@@ -21,7 +22,9 @@ function Aside() {
                             descriptionStyle="border-t-2 border-t-neutral-700 bg-black text-white rounded-br-xl py-2 px-4" >
                         </Cards>
                     </section>
+                    <Carrusel></Carrusel>
                 </article>
+
 
             </aside>
 
