@@ -41,15 +41,19 @@ function Main() {
                     {/* Tecnologias */}
                     <article className='flex flex-col justify-evenly w-11/12 h-screen bg-yellow-200'>
                         <h2 className='text-center text-6xl'>Tecnologias:</h2>
-                        <div className='flex justify-around'>
-                            <p className='max-w-md max-h-max rounded-md bg-slate-50 shadow-lg px-4 py-2'>
-                                Estas son las tecnologias que utilizo para desarrollar mis proyectos.
-                                Para una vista mas tecnica podes revisar mi GitHub, en donde podras ver
-                                en detalle la utilizacion de las mismas. Si te interesa mi perfil, cualquier
-                                tecnologia o proyecto nuevo que haga llegara alli primero, asi que no te olvides
-                                de visitarlo😉!
-                            </p>
-                            <section className='flex items-center gap-3 justify-center flex-wrap max-w-md rounded-md bg-slate-50 shadow-lg py-5'>
+                        <section className='flex justify-around'>
+                            <div className='flex flex-col gap-5'>
+                                <p className='max-w-md max-h-max rounded-md bg-slate-50 shadow-lg px-4 py-2'>
+                                    Estas son las tecnologias que utilizo para desarrollar mis proyectos.
+                                    Para una vista mas tecnica podes revisar mi GitHub, en donde podras ver
+                                    en detalle la utilizacion de las mismas. Si te interesa mi perfil, cualquier
+                                    tecnologia o proyecto nuevo que haga llegara alli primero, asi que no te olvides
+                                    de visitarlo😉!
+                                </p>
+                                <img src={assets.decorative.flecha_zaul.src} className='w-48 self-end'/>
+                            </div>
+
+                            <div className='flex items-center gap-3 justify-center flex-wrap max-w-md rounded-md bg-slate-50 shadow-lg py-5'>
                                 <img className='w-24 drop-shadow-yellow' src={assets.technology.javascript.src} alt="Logo de JavaScript" />
                                 <img className='w-24 drop-shadow-sky' src={assets.technology.react.src} alt="Logo de React" />
                                 <img className='w-24 drop-shadow-orange' src={assets.technology.html.src} alt="Logo de HTML" />
@@ -59,8 +63,8 @@ function Main() {
                                 <img className='w-24 drop-shadow-white' src={assets.technology.github.src} alt="Logo de GitHub" />
                                 <img className='w-24 drop-shadow-green' src={assets.technology.tailwind.src} alt="Logo de Tailwind" />
                                 <img className='w-24 drop-shadow-pink' src={assets.technology.bootstrap.src} alt="Logo de Bootstrap" />
-                            </section>
-                        </div>
+                            </div>
+                        </section>
 
                     </article>
 

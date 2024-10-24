@@ -82,6 +82,12 @@ const assets = {
             id : 13,
             src : '/assets/files/ejemplo_cv.txt'
         }
+    },
+
+    decorative : {
+        flecha_zaul : {
+            src : './assets/images/flecha_azul.png'
+        }
     }
 
 }
