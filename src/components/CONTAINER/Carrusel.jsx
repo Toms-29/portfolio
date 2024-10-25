@@ -1,54 +1,45 @@
-import assets from "../../assets"
-import { useState } from "react"
+import { Children, useState } from "react"
 
 
-const Carrusel = () => {
+const Carrusel = ({ children }) => {
 
-    const images = [
-        assets.technology.javascript.src,
-        assets.technology.javascript.src,
-        assets.technology.javascript.src,
-        assets.technology.javascript.src,
-        assets.technology.javascript.src,
-    ];
+    const [indexCarrusel, setIndexCarrusel] = useState(0)
 
-    const Carousel = () => {
-        const [currentIndex, setCurrentIndex] = useState(0);
+    const imgSiguiente = () => {
+        setIndexCarrusel((prevIndex) =>
+            prevIndex === children.length - 1 ? prevIndex = 0 : prevIndex + 1)
+    }
 
-        const nextSlide = () => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        };
+    const imgAnterior = () => {
+        setIndexCarrusel((prevIndex) =>
+            prevIndex === 0 ? children.length - 1 : prevIndex - 1)
+    }
 
-        const prevSlide = () => {
-            setCurrentIndex((prevIndex) =>
-                prevIndex === 0 ? images.length - 1 : prevIndex - 1
-            );
-        };
-
-        return (
-            <div className="carousel-container">
-                <div className="carousel">
-                    {images.map((image, index) => {
-                        const isActive = index === currentIndex;
-                        const isPrev = index === (currentIndex - 1 + images.length) % images.length;
-                        const isNext = index === (currentIndex + 1) % images.length;
+    return (
+        <>
+            <section className="carrusel-container">
+                <button className="next-button" onClick={imgAnterior}> Anterior </button>
+                <article className='carrusel'>
+                    {Children.map(children , (child, index) => {
+                        const imgPrincipal = index === indexCarrusel
+                        const imgAnterior = indexCarrusel === 0 ? index === (children.length - 1) : index === (indexCarrusel - 1)
+                        const imgSiguiente = indexCarrusel === children.length - 1 ? (index === 0) : index === (indexCarrusel + 1)
 
                         return (
-                            <div
-                                key={index}
-                                className={`carousel-item ${isActive ? 'active' : ''} ${isPrev ? 'prev' : ''} ${isNext ? 'next' : ''}`}
-                            >
-                                <img src={image} alt={`Slide ${index}`} className="carousel-image" />
+                            <div className={`carrusel-item ${imgPrincipal ? 'principal' : ''} ${imgSiguiente ? 'siguiente' : ''} ${imgAnterior ? 'anterior' : ''}`}>
+                                {child}
                             </div>
-                        );
-                    })}
-                </div>
-                <button className="prev-button" onClick={prevSlide}>‹</button>
-                <button className="next-button" onClick={nextSlide}>›</button>
-            </div>
-        );
-    };
 
-}
+                        )
+                    })}
+                </article>
+                <button className="prev-button" onClick={imgSiguiente}> Siguiente </button>
+            </section>
+        </>
+    )
+
+
+};
+
 
 export default Carrusel

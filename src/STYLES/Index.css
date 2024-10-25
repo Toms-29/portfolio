@@ -18,48 +18,51 @@ body {
 
 
 /* Estilo del carrusel */
-.carousel-container {
-    width: 80%;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
+.carrusel-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.carousel {
-    display: flex;
+.carrusel {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-areas: 'anterior principal siguiente';
     transition: transform 0.5s ease;
 }
 
-.carousel-item {
-    flex: 0 0 50%;
-    opacity: 0.5;
+.carrusel-item {
+    display: none;
     transition: transform 0.5s ease, opacity 0.5s ease;
     transform: scale(0.8);
 }
 
-.carousel-item.active {
-    flex: 0 0 100%;
+.carrusel-item.principal {
+    grid-area: principal;
+    display: inline-block;
     opacity: 1;
     transform: scale(1);
 }
 
-.carousel-item.prev,
-.carousel-item.next {
+.carrusel-item.anterior,
+.carrusel-item.siguiente {
+    display: inline-block;
     opacity: 0.5;
     transform: scale(0.9);
 }
 
-.carousel-image {
-    width: 100%;
-    height: auto;
-    display: block;
+.carrusel-item.anterior{
+    grid-area: anterior;
+}
+
+.carrusel-item.siguiente{
+    grid-area: siguiente;
 }
 
 .prev-button,
 .next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
@@ -67,13 +70,6 @@ body {
     cursor: pointer;
 }
 
-.prev-button {
-    left: 10px;
-}
-
-.next-button {
-    right: 10px;
-}
 
 /* Estilo por Themes */
 
