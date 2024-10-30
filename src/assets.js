@@ -80,7 +80,7 @@ const assets = {
     files : {
         curriculum : {
             id : 13,
-            src : '/assets/files/ejemplo_cv.txt'
+            src : './assets/files/ejemplo_cv.txt'
         }
     },
 
