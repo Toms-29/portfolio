@@ -18,29 +18,55 @@ function Aside() {
                     </section>
 
                     <Carrusel>
+
                         <Cards
-                            cardStyle='w-lg h-md bg-slate-200 '
-                            descriptionStyle=''>
+                            cardTitle=''
+                            cardDescripcion=''
+                            srcImg=''
+                            altText='Proyecto'
+                            cardStyle='w-full bg-slate-200 flex flex-col justify-center items-center'
+                            imgBox="w-full h-40 flex justify-center items-center"
+                            textBox='w-11/12 px-2 pt-2 pb-4 border-gray-600 border-t-2'>
                         </Cards>
 
                         <Cards
-                            cardStyle='w-lg h-md bg-slate-200 '
-                            descriptionStyle=''>
+                            cardTitle=''
+                            cardDescripcion=''
+                            srcImg=''
+                            altText='Proyecto'
+                            cardStyle='w-full bg-slate-200 flex flex-col justify-center items-center'
+                            imgBox="w-full h-40 flex justify-center items-center"
+                            textBox='w-11/12 px-2 pt-2 pb-4 border-gray-600 border-t-2'>
                         </Cards>
 
                         <Cards
-                            cardStyle='w-lg h-md bg-slate-200 '
-                            descriptionStyle=''>
+                            cardTitle=''
+                            cardDescripcion=''
+                            srcImg=''
+                            altText='Proyecto'
+                            cardStyle='w-full bg-slate-200 flex flex-col justify-center items-center'
+                            imgBox="w-full h-40 flex justify-center items-center"
+                            textBox='w-11/12 px-2 pt-2 pb-4 border-gray-600 border-t-2'>
                         </Cards>
 
                         <Cards
-                            cardStyle='w-lg h-md bg-slate-200 '
-                            descriptionStyle=''>
+                            cardTitle=''
+                            cardDescripcion=''
+                            srcImg=''
+                            altText='Proyecto'
+                            cardStyle='w-full bg-slate-200 flex flex-col justify-center items-center'
+                            imgBox="w-full h-40 flex justify-center items-center"
+                            textBox='w-11/12 px-2 pt-2 pb-4 border-gray-600 border-t-2'>
                         </Cards>
 
                         <Cards
-                            cardStyle='w-lg h-md bg-slate-200 '
-                            descriptionStyle=''>
+                            cardTitle=''
+                            cardDescripcion=''
+                            srcImg=''
+                            altText='Proyecto'
+                            cardStyle='w-full bg-slate-200 flex flex-col justify-center items-center'
+                            imgBox="w-full h-40 flex justify-center items-center"
+                            textBox='w-11/12 px-2 pt-2 pb-4 border-gray-600 border-t-2'>
                         </Cards>
 
                     </Carrusel>

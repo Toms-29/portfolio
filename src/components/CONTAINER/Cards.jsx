@@ -1,21 +1,45 @@
+import { useEffect, useState } from "react"
 
 
+const Cards = ({ cardStyle, textBox, imgBox, srcImg, altText, cardTitle, cardDescripcion }) => {
 
-const Cards = ({ cardStyle, descriptionStyle, srcImg, cardTitle = 'Titulo', cardDescripcion = 'Este proyecto esta en desarrollo' }) => {
+    const [card, setCard] = useState(null)
+
+    const cradCargada = () => {
+        return (
+            <figure className={cardStyle}>
+                <div className={imgBox}>
+                    <img src={srcImg} alt={altText} />
+                </div>
+                <div className={textBox}>
+                    <h3>{cardTitle}</h3>
+                    <p>{cardDescripcion}</p>
+                </div>
+            </figure >
+        )
+    }
+
+    const cardVacia = () => {
+        return (
+            <div className='w-full h-48 bg-slate-200 flex justify-center items-center'>
+                Proyecto en desarrollo...
+            </div>
+        )
+    }
+
+    useEffect(() => {
+        if (srcImg && cardTitle && cardDescripcion) {
+            setCard(cradCargada())
+        } else {
+            setCard(cardVacia())
+        }
+
+    }, [srcImg, cardTitle, cardDescripcion])
+
 
     return (
         <>
-            <figure className={cardStyle}>
-                <div className="h-44 flex justify-center items-center">
-                    <img src={srcImg} alt="Proyecto en desarrollo" />
-                </div>
-                <figcaption className={descriptionStyle}>
-                    <h3>{cardTitle}</h3>
-                    <p>{cardDescripcion}</p>
-                </figcaption>
-            </figure>
-
-
+            {card}
         </>
     )
 }
