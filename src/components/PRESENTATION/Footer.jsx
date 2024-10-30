@@ -5,9 +5,9 @@ function Footer() {
 
     return (
         <>
-            <footer className='w-full h-32 bg-gray-900 flex justify-center items-center'>
+            <footer className='w-full h-48 bg-gray-900 flex justify-center items-center'>
                 <section className='w-11/12 sm:w-3/4 flex flex-row-reverse items-center justify-between gap-3 my-5'>
-                    {/* <article className='flex flex-col items-center gap-1'>
+                    <article className='flex flex-col items-center justify-center gap-1'>
                         <h3 className='text-white'>Contacto: </h3>
                         <section className='flex flex-row items-center gap-3'>
                             <Link
@@ -45,7 +45,7 @@ function Footer() {
                                 <a className='hover:text-white' target="_blank" href="https://icons8.com">Icons8</a>
                             </li>
                         </ul>
-                    </article> */}
+                    </article>
                 </section>
 
 
