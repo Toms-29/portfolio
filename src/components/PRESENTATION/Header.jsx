@@ -2,13 +2,16 @@ import Link from "../CONTAINER/Links"
 import ThemeButton from "../CONTAINER/ThemeButton"
 import DownloadButton from "../CONTAINER/DownloadButton"
 import assets from '../../assets.js'
+import NavBar from "../CONTAINER/NavBar.jsx"
 
 function Header({ toggleTheme, theme }) {
 
     return (
         <>
             <header className="w-full flex h-28 bg-sky-600 justify-center items-center border-2 border-b-gray-700 border-r-0 border-t-0 border-l-0">
-                <nav className="w-11/12 sm:w-3/4 flex justify-end gap-4 ">
+                <NavBar
+                    styles="w-11/12 sm:w-3/4 flex justify-end gap-4 ">
+
                     <DownloadButton
                         buttonStyle='w-32 h-12 bg-teal-500 rounded-lg border-2 border-black'
                         archivo={assets.files.curriculum.src}>
@@ -23,7 +26,7 @@ function Header({ toggleTheme, theme }) {
                     </Link>
 
                     <ThemeButton toggleTheme={toggleTheme} theme={theme}></ThemeButton>
-                </nav>
+                </NavBar>
 
             </header>
         </>
