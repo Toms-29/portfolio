@@ -1,7 +1,10 @@
 import Cards from '../CONTAINER/Cards'
 import Carrusel from '../CONTAINER/Carrusel'
+import { useSelector } from 'react-redux'
 
 function Aside() {
+
+    const ligthTheme = useSelector((state) => (state.theme.ligthTheme))
 
     return (
         <>

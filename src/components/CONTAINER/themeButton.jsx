@@ -1,30 +1,21 @@
-import { useState, useEffect } from "react"
+import { useDispatch, useSelector } from "react-redux"
+import { toggleTheme } from '../../STORE/themeSlice.js'
+import assets from "../../assets"
 
-const ThemeButton = ({ toggleTheme, theme }) => {
-    const ligth_mode = './assets/images/ligthMode_icon.png'
-    const dark_mode = './assets/images/darkMode_icon.png'
+const ThemeButton = () => {
 
-    const [imgMode, setImgMode] = useState(ligth_mode)
+    const dispatch = useDispatch()
+    const lightTheme = useSelector((state) => state.theme.lightTheme)
 
-    useEffect(() => {
-        if (theme === 'ligthTheme') {
-            setImgMode(dark_mode)
-        } else {
-            setImgMode(ligth_mode)
-        }
-        return () => {
-        }
-    }, [theme])
-
+    const buttonLight = assets.decorative.button_Light.src
+    const buttonDark = assets.decorative.button_dark.src
 
 
     return (
         <>
-            <button onClick={toggleTheme}>
-                <img className='w-12 hover:drop-shadow-white' src={imgMode} alt='Boton para cambiar el tema ' />
+            <button onClick={() => dispatch(toggleTheme())}>
+                <img src={lightTheme ? buttonLight : buttonDark} className="w-12" ></img>
             </button>
-
-
         </>
     )
 }

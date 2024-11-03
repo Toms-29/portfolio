@@ -87,6 +87,12 @@ const assets = {
     decorative : {
         flecha_zaul : {
             src : './assets/images/flecha_azul.png'
+        },
+        button_Light : {
+            src : './assets/images/lightMode_icon.png'
+        },
+        button_dark : {
+            src : './assets/images/darkMode_icon.png'
         }
     }
 

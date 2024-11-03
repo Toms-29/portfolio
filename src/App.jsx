@@ -3,26 +3,16 @@ import Header from './components/PRESENTATION/Header'
 import Main from './components/PRESENTATION/Main'
 import Aside from './components/PRESENTATION/Aside'
 import Footer from './components/PRESENTATION/Footer'
-import { useState, useEffect } from "react"
+import { useSelector } from "react-redux"
+
 
 function App() {
 
-    const [theme, setTheme] = useState('darkTheme')
-
-    const toggleTheme = () => {
-        setTheme((prevTheme) => (prevTheme === 'darkTheme' ? 'ligthTheme' : 'darkTheme'))
-    }
-
-    useEffect(() => {
-        const rootDiv = document.getElementById('root');
-        if (rootDiv) {
-            rootDiv.className = theme;
-        }
-    }, [theme]);
+    const lightTheme = useSelector((state) => state.theme.lightTheme)
 
     return (
         <>
-            <Header toggleTheme={toggleTheme} theme={theme}></Header>
+            <Header></Header>
             <Main></Main>
             <Aside></Aside>
             <Footer></Footer>

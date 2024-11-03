@@ -3,8 +3,11 @@ import ThemeButton from "../CONTAINER/ThemeButton"
 import DownloadButton from "../CONTAINER/DownloadButton"
 import assets from '../../assets.js'
 import NavBar from "../CONTAINER/NavBar.jsx"
+import { useSelector } from 'react-redux'
 
-function Header({ toggleTheme, theme }) {
+function Header() {
+
+    const ligthTheme = useSelector((state) => (state.theme.ligthTheme))
 
     return (
         <>
@@ -19,13 +22,13 @@ function Header({ toggleTheme, theme }) {
 
                     <Link
                         link='https://github.com/Toms-29'
-                        imgSrc='./assets/images/github.png'
+                        imgSrc={assets.technology.github.src}
                         boxStyle='w-12'
                         imgStyle='w-12 hover:drop-shadow-white'
                         arialLabel='Link a GitHub'>
                     </Link>
 
-                    <ThemeButton toggleTheme={toggleTheme} theme={theme}></ThemeButton>
+                    <ThemeButton></ThemeButton>
                 </NavBar>
 
             </header>

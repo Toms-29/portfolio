@@ -1,11 +1,24 @@
+import { useSelector } from 'react-redux'
 import assets from '../../assets'
 
 
 function Main() {
 
+    const lightTheme = useSelector((state) => (state.theme.lightTheme))
+
+    const mainStyles = {
+        lightmode: 'w-full flex items-center justify-center',
+        darkmode: 'w-full flex items-center justify-center bg-black'
+    }
+
+    const sectionStyles = {
+        lightmode: 'w-full flex items-center justify-center',
+        darkmode: 'w-full flex items-center justify-center bg-black'
+    }
+
     return (
         <>
-            <main className='w-full flex items-center justify-center'>
+            <main className={lightTheme ? mainStyles.lightmode : mainStyles.darkmode}>
                 <section className='w-11/12 md:w-3/4 flex flex-col items-center gap-5 '>
                     {/* Sobre mi */}
                     <h1 className=' text-3xl font-semibold p-4'>¡Hola soy Tomás!</h1>
@@ -50,7 +63,7 @@ function Main() {
                                     tecnologia o proyecto nuevo que haga llegara alli primero, asi que no te olvides
                                     de visitarlo😉!
                                 </p>
-                                <img src={assets.decorative.flecha_zaul.src} className='w-48 self-end'/>
+                                <img src={assets.decorative.flecha_zaul.src} className='w-48 self-end' />
                             </div>
 
                             <div className='flex items-center gap-3 justify-center flex-wrap max-w-md rounded-md bg-slate-50 shadow-lg py-5'>
