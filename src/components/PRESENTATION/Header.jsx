@@ -7,11 +7,15 @@ import { useSelector } from 'react-redux'
 
 function Header() {
 
-    const ligthTheme = useSelector((state) => (state.theme.ligthTheme))
+    const lightTheme = useSelector((state) => (state.theme.lightTheme))
+
+    const headerStyles = {
+        darkmode: 'bg-gray-900'
+    }
 
     return (
         <>
-            <header className="w-full flex h-28 bg-sky-600 justify-center items-center border-2 border-b-gray-700 border-r-0 border-t-0 border-l-0">
+            <header className={`${lightTheme ? 'bg-sky-600' : headerStyles.darkmode} w-full flex h-28 justify-center items-center border-2 border-b-gray-700 border-r-0 border-t-0 border-l-0`}>
                 <NavBar
                     styles="w-11/12 sm:w-3/4 flex justify-end gap-4 ">
 
