@@ -1,10 +1,7 @@
 import Link from '../CONTAINER/Links'
-import { useSelector } from 'react-redux'
 
 
 function Footer() {
-
-    const ligthTheme = useSelector((state) => (state.theme.ligthTheme))
 
     return (
         <>

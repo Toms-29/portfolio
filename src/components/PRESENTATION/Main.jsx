@@ -12,7 +12,7 @@ function Main() {
     }
 
     const articleTecnoligisStyles = {
-        darkmode: 'bg-gray-700 shadow-neutral-700'
+        darkmode: 'bg-zinc-900 shadow-neutral-700'
     }
 
     const parrafoStyles = {
