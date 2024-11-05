@@ -22,10 +22,10 @@ function Main() {
     return (
         <>
             <main className={lightTheme ? mainStyles.lightmode : mainStyles.darkmode}>
-                <section className='w-11/12 md:w-3/4 flex flex-col items-center gap-5 '>
+                <section className='md:w-3/4 flex flex-col items-center gap-5 '>
                     {/* Sobre mi */}
                     <h1 className=' text-3xl font-semibold p-4'>¡Hola soy Tomás!</h1>
-                    <article className='flex flex-col justify-center tracking-wider w-11/12 h-screen'>
+                    <article className='flex flex-col justify-center tracking-wider w-11/12 md:h-screen'>
                         <p className={`${lightTheme ? 'bg-slate-50' : parrafoStyles.darkmode} max-w-lg shadow-lg rounded-md px-5 py-2`}>
                             Y desarrollo hace mas de dos años con JavaScript y React, conciente de la utilizacion de buenas practicas.
                             Igualmente, continuo mejorando mis habilidades como dev, manteniendome actualizado sobre las
@@ -55,30 +55,30 @@ function Main() {
 
 
                     {/* Tecnologias */}
-                    <article className={`${lightTheme ? 'bg-yellow-200' : articleTecnoligisStyles.darkmode} flex flex-col justify-evenly w-11/12 h-screen `}>
-                        <h2 className='text-center text-6xl'>Tecnologias:</h2>
-                        <section className='flex justify-around'>
+                    <article className={`${lightTheme ? 'bg-yellow-200' : articleTecnoligisStyles.darkmode} flex flex-col justify-evenly px-2 py-4 md:w-11/12 xl:h-screen `}>
+                        <h2 className='text-center text-3xl xl:text-6xl'>Tecnologias:</h2>
+                        <section className='flex flex-col xl:flex-row justify-around'>
                             <div className='flex flex-col gap-5'>
-                                <p className={`${lightTheme ? 'bg-slate-50' : parrafoStyles.darkmode} max-w-md max-h-max rounded-md shadow-lg px-4 py-2`}>
+                                <p className={`${lightTheme ? 'xl:bg-slate-50' : parrafoStyles.darkmode} max-w-md max-h-max rounded-md xl:shadow-lg px-4 py-2`}>
                                     Estas son las tecnologias que utilizo para desarrollar mis proyectos.
                                     Para una vista mas tecnica podes revisar mi GitHub, en donde podras ver
                                     en detalle la utilizacion de las mismas. Si te interesa mi perfil, cualquier
                                     tecnologia o proyecto nuevo que haga llegara alli primero, asi que no te olvides
                                     de visitarlo😉!
                                 </p>
-                                <img src={assets.decorative.flecha_zaul.src} className='w-48 self-end' />
+                                <img src={assets.decorative.flecha_zaul.src} className='w-48 self-end hidden xl:inline-block' />
                             </div>
 
-                            <div className={`${lightTheme ? 'bg-slate-50' : parrafoStyles.darkmode} flex items-center gap-3 justify-center flex-wrap max-w-md rounded-md shadow-lg py-5`}>
-                                <img className='w-24 drop-shadow-yellow' src={assets.technology.javascript.src} alt="Logo de JavaScript" />
-                                <img className='w-24 drop-shadow-sky' src={assets.technology.react.src} alt="Logo de React" />
-                                <img className='w-24 drop-shadow-orange' src={assets.technology.html.src} alt="Logo de HTML" />
-                                <img className='w-24 drop-shadow-sky' src={assets.technology.css.src} alt="Logo de CSS" />
-                                <img className='w-24 drop-shadow-pink' src={assets.technology.sass.src} alt="Logo de SASS" />
-                                <img className='w-24 drop-shadow-orange' src={assets.technology.git.src} alt="Logo de Git" />
-                                <img className='w-24 drop-shadow-white' src={assets.technology.github.src} alt="Logo de GitHub" />
-                                <img className='w-24 drop-shadow-green' src={assets.technology.tailwind.src} alt="Logo de Tailwind" />
-                                <img className='w-24 drop-shadow-pink' src={assets.technology.bootstrap.src} alt="Logo de Bootstrap" />
+                            <div className={`${lightTheme ? 'xl:bg-slate-50' : parrafoStyles.darkmode} flex items-center gap-3 justify-center flex-wrap max-w-md rounded-md shadow-lg py-5`}>
+                                <img className='w-16 md:w-24 drop-shadow-yellow' src={assets.technology.javascript.src} alt="Logo de JavaScript" />
+                                <img className='w-16 md:w-24 drop-shadow-sky' src={assets.technology.react.src} alt="Logo de React" />
+                                <img className='w-16 md:w-24 drop-shadow-orange' src={assets.technology.html.src} alt="Logo de HTML" />
+                                <img className='w-16 md:w-24 drop-shadow-sky' src={assets.technology.css.src} alt="Logo de CSS" />
+                                <img className='w-16 md:w-24 drop-shadow-pink' src={assets.technology.sass.src} alt="Logo de SASS" />
+                                <img className='w-16 md:w-24 drop-shadow-orange' src={assets.technology.git.src} alt="Logo de Git" />
+                                <img className='w-16 md:w-24 drop-shadow-white' src={assets.technology.github.src} alt="Logo de GitHub" />
+                                <img className='w-16 md:w-24 drop-shadow-green' src={assets.technology.tailwind.src} alt="Logo de Tailwind" />
+                                <img className='w-16 md:w-24 drop-shadow-pink' src={assets.technology.bootstrap.src} alt="Logo de Bootstrap" />
                             </div>
                         </section>
 
