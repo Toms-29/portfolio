@@ -21,9 +21,9 @@ function Aside() {
 
     return (
         <>
-            <aside className={`${lightTheme ? 'bg-sky-600' : asideStyles.darkmode} w-full h-screen flex items-center justify-end `}>
-                <article className={`${lightTheme ? 'bg-slate-50' : articleCarruselStyles.darkmode} w-11/12 h-3/4 rounded-l-3xl  sm:w-4/5 flex flex-col gap-12 justify-center `}>
-                    <section className='bg- flex items-center justify-center gap-12 md:max-w-full'>
+            <aside className={`${lightTheme ? 'bg-sky-600' : asideStyles.darkmode} w-full py-8 xl:h-screen flex items-center justify-center xl:justify-end `}>
+                <section className={`${lightTheme ? 'bg-slate-50' : articleCarruselStyles.darkmode} w-11/12 xl:h-3/4 py-6 rounded-xl xl:rounded-l-3xl  sm:w-4/5 flex flex-col gap-12 justify-center `}>
+                    <article className='bg- flex flex-col xl:flex-row items-center justify-center gap-6 xl:gap-12 md:max-w-full'>
                         <h2 className='text-4xl'>Proyectos:</h2>
                         <p className={`${lightTheme ? 'bg-slate-100' : parrafoStyles.darkmode} max-w-3xl max-h-max rounded-md shadow-md px-4 py-2`}>
                             Los proyectos! Son de las primeras cosas que se mira en los programadores.
@@ -31,9 +31,10 @@ function Aside() {
                             Por ello y mas razones, en esta seccion, se encontraran los proyectos que ire desarrollando junto a una brebe
                             descripcion de ellos, si estas interesado podras visitarlos haciendo click sobre ellos.
                         </p>
-                    </section>
+                    </article>
 
-                    <Carrusel>
+                    <Carrusel
+                        style='hidden xl:flex'>
 
                         <Cards
                             cardTitle=''
@@ -87,7 +88,7 @@ function Aside() {
 
                     </Carrusel>
 
-                </article>
+                </section>
 
 
             </aside>
