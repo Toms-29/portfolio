@@ -21,7 +21,7 @@ const Cards = ({ cardStyle, textBox, imgBox, srcImg, altText, cardTitle, cardDes
 
     const cardVacia = () => {
         return (
-            <div className='w-full h-48 bg-slate-200 flex justify-center items-center'>
+            <div className='w-full h-full bg-slate-200 flex justify-center items-center rounded-lg'>
                 Proyecto en desarrollo...
             </div>
         )

@@ -1,7 +1,7 @@
 import { Children, useState } from "react"
 
 
-const Carrusel = ({ children, style }) => {
+const Carrusel = ({ children }) => {
 
     const [indexCarrusel, setIndexCarrusel] = useState(0)
 
@@ -17,23 +17,21 @@ const Carrusel = ({ children, style }) => {
 
     return (
         <>
-            <section className={`${style} carrusel-container`}>
-                <button className="next-button" onClick={imgAnterior}> Anterior </button>
+            <section className='carrusel-container'>
+                <button className="next-button" onClick={imgAnterior}> {'<'} </button>
                 <article className='carrusel'>
-                    {Children.map(children , (child, index) => {
+                    {Children.map(children, (child, index) => {
                         const imgPrincipal = index === indexCarrusel
-                        const imgAnterior = indexCarrusel === 0 ? index === (children.length - 1) : index === (indexCarrusel - 1)
-                        const imgSiguiente = indexCarrusel === children.length - 1 ? (index === 0) : index === (indexCarrusel + 1)
 
                         return (
-                            <div className={`carrusel-item ${imgPrincipal ? 'principal' : ''} ${imgSiguiente ? 'siguiente' : ''} ${imgAnterior ? 'anterior' : ''}`}>
+                            <div className={`carrusel-item ${imgPrincipal ? 'principal' : ''}`}>
                                 {child}
                             </div>
 
                         )
                     })}
                 </article>
-                <button className="prev-button" onClick={imgSiguiente}> Siguiente </button>
+                <button className="prev-button" onClick={imgSiguiente}> {'>'} </button>
             </section>
         </>
     )

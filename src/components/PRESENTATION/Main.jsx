@@ -57,7 +57,7 @@ function Main() {
                     {/* Tecnologias */}
                     <article className={`${lightTheme ? 'bg-yellow-200' : articleTecnoligisStyles.darkmode} flex flex-col justify-evenly px-2 py-4 md:w-11/12 xl:h-screen `}>
                         <h2 className='text-center text-3xl xl:text-6xl'>Tecnologias:</h2>
-                        <section className='flex flex-col xl:flex-row justify-around'>
+                        <section className='flex flex-col xl:flex-row justify-around items-center'>
                             <div className='flex flex-col gap-5'>
                                 <p className={`${lightTheme ? 'xl:bg-slate-50' : parrafoStyles.darkmode} max-w-md max-h-max rounded-md xl:shadow-lg px-4 py-2`}>
                                     Estas son las tecnologias que utilizo para desarrollar mis proyectos.
