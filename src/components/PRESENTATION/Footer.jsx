@@ -6,7 +6,7 @@ function Footer() {
     return (
         <>
             <footer className='w-full xl:h-48 bg-gray-900 flex justify-center items-center'>
-                <section className='w-11/12 sm:w-3/4 flex flex-row-reverse items-center justify-between gap-3 my-5'>
+                <section className='w-11/12 sm:w-3/4 max-w-6xl flex flex-row-reverse items-center justify-between gap-3 my-5'>
                     <article className='flex flex-col items-center justify-center gap-1'>
                         <h3 className='text-white'>Contacto: </h3>
                         <section className='flex flex-row items-center gap-3'>

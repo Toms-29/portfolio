@@ -22,7 +22,7 @@ function Main() {
     return (
         <>
             <main className={lightTheme ? mainStyles.lightmode : mainStyles.darkmode}>
-                <section className='md:w-3/4 flex flex-col items-center gap-5 '>
+                <section className='md:w-3/4 max-w-6xl flex flex-col items-center gap-5 '>
                     {/* Sobre mi */}
                     <h1 className=' text-3xl font-semibold p-4'>¡Hola soy Tomás!</h1>
                     <article className='flex flex-col justify-center tracking-wider w-11/12 md:h-screen'>
