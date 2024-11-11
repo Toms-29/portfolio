@@ -93,6 +93,12 @@ const assets = {
         },
         button_dark : {
             src : './assets/images/darkMode_icon.png'
+        },
+        menu : {
+            src : './assets/images/Menu.png'
+        },
+        X : {
+            src : './assets/images/X.png'
         }
     }
 

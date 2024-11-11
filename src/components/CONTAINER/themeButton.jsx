@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux"
 import { toggleTheme } from '../../STORE/themeSlice.js'
-import assets from "../../assets"
+import assets from "../../assets.js"
 
-const ThemeButton = () => {
+const ThemeButton = ({ buttonStyle }) => {
 
     const dispatch = useDispatch()
     const lightTheme = useSelector((state) => state.theme.lightTheme)
@@ -13,7 +13,7 @@ const ThemeButton = () => {
 
     return (
         <>
-            <button onClick={() => dispatch(toggleTheme())}>
+            <button className={buttonStyle} onClick={() => dispatch(toggleTheme())}>
                 <img src={lightTheme ? buttonLight : buttonDark} className="w-12" ></img>
             </button>
         </>
