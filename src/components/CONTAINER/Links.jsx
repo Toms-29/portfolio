@@ -1,6 +1,6 @@
 
 
-const Link = ({ link, imgSrc, arialLabel, imgStyle, boxStyle, praphText } ) => {
+const Link = ({ link, imgSrc, arialLabel, imgStyle, boxStyle, praphText, textStyle } ) => {
 
     return (
         <>
@@ -11,7 +11,7 @@ const Link = ({ link, imgSrc, arialLabel, imgStyle, boxStyle, praphText } ) => {
                     rel="noopener noreferrer"
                     aria-label={arialLabel}
                 >
-                    {imgSrc && imgStyle ? <img src={imgSrc} className={imgStyle} /> : <p>{praphText}</p> }
+                    {imgSrc && imgStyle ? <img src={imgSrc} className={imgStyle} /> : <p className={textStyle} >{praphText}</p> }
                     
                 </a>
             </div>

@@ -24,7 +24,7 @@ const Menu = ({ children }) => {
                             <img className="w-8" src={assets.decorative.X.src} alt="Cerrar menu" />
                         </button>
                     </article>
-                    <article className='w-full bg-neutral-900 h-full px-5 py-3'>
+                    <article className='w-full h-full bg-neutral-900 flex flex-col px-6 py-3 '>
                         {children}
                     </article>
                 </section>
