@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux'
 
 function Header() {
 
-    const lightTheme = useSelector((state) => (state.theme.lightTheme))
+    const theme = useSelector((state) => (state.theme.theme))
 
     const headerStyles = {
         darkmode: 'bg-gray-900'
@@ -16,7 +16,7 @@ function Header() {
 
     return (
         <>
-            <header className={`${lightTheme ? 'bg-sky-600' : headerStyles.darkmode} w-full flex h-24 justify-center items-center border-2 border-b-gray-700 border-r-0 border-t-0 border-l-0`}>
+            <header className={`${theme === 'light' ? 'bg-sky-600' : headerStyles.darkmode} w-full flex h-24 justify-center items-center border-2 border-b-gray-700 border-r-0 border-t-0 border-l-0`}>
                 <NavBar
                     styles="w-11/12 sm:w-3/4 max-w-6xl flex justify-start md:justify-between gap-4 ">
 
