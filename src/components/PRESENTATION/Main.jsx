@@ -1,3 +1,4 @@
+import Link from "../CONTAINER/Links"
 import { useSelector } from 'react-redux'
 import assets from '../../assets'
 
@@ -27,29 +28,29 @@ function Main() {
                     <h1 className=' text-3xl font-semibold p-4'>¡Hola soy Tomás!</h1>
                     <article className='flex flex-col justify-center tracking-wider w-11/12 md:h-screen'>
                         <p className={`${lightTheme ? 'bg-slate-50' : parrafoStyles.darkmode} max-w-lg shadow-lg rounded-md px-5 py-2`}>
-                            Y desarrollo hace mas de dos años con JavaScript y React, conciente de la utilizacion de buenas practicas.
-                            Igualmente, continuo mejorando mis habilidades como dev, manteniendome actualizado sobre las
+                            Y desarrollo hace mas de dos años con <span className="text-yellow-500 font-semibold"> JavaScript </span> y <span className="text-sky-600 font-semibold"> React</span>, conciente de la utilizacion de buenas practicas.
+                            Igualmente, continuo mejorando mis habilidades como dev, manteniendome <span className="text-emerald-400 font-semibold"> actualizado </span> sobre las
                             tecnologias y utilizando herramientas que hagan mas dinamico el trabajo con las mismas.
                         </p>
                         <br />
                         <p className={`${lightTheme ? 'bg-slate-50' : parrafoStyles.darkmode} max-w-lg self-end shadow-lg rounded-md px-5 py-2`}>
                             Mi camino por el mundo del desarrollo web comenzo y, por el momento, continua de forma autodidacta y
                             de la mano de empresas que brindan becas para la capacitacion profecional, un ejemplo de ello es
-                            el programa Digitalers de la empresa Telecom con el cual me estoy especializando en el area de Fornt-End.
+                            el programa <span className="text-indigo-700 font-semibold"> Digitalers </span>  de la empresa <span className="text-indigo-700 font-semibold"> Telecom </span> con el cual me estoy especializando en el area de <span className="text-teal-500 font-semibold"> Fornt-End</span>.
                         </p>
                         <br />
                         <p className={`${lightTheme ? 'bg-slate-50' : parrafoStyles.darkmode} max-w-lg shadow-lg rounded-md px-5 py-2`}>
-                            Ya que el mundo IT crece de manera rapida y constante, uno debe mantenerce informado para no quedarce
-                            en el camino, en mi caso me matengo actualizado con herramientas como Daily.dev y comunidades de devs
-                            como FrontendCafe .
+                            Ya que el mundo IT crece de manera rapida y constante, uno debe mantenerce <span className="text-pink-600 font-semibold"> informado </span> para no quedarce
+                            en el camino, en mi caso me matengo actualizado con herramientas como <span className="text-red-600 font-semibold"> Daily.dev </span> y comunidades de devs
+                            como <span className="text-amber-500 font-semibold"> FrontendCafe</span> .
                         </p>
                         <br />
                         <p className={`${lightTheme ? 'bg-slate-50' : parrafoStyles.darkmode} max-w-lg self-end shadow-lg rounded-md px-5 py-2`}>
                             Estoy entusiasmado por enfrentar desafíos profesionalmente y desarrollar nuevos proyectos.
-                            Si estás interesado, no dudes en contactarme, sería un placer contribuir al crecimiento de tu equipo,
-                            aportar mis habilidades y seguir creciendo en un entorno colaborativo.
+                            Si estás interesado, <span className="text-blue-600 font-semibold"> no dudes en contactarme</span> , sería un placer contribuir al crecimiento de tu equipo,
+                            aportar mis habilidades y seguir <span className="text-teal-500 font-semibold"> creciendo </span> en un entorno colaborativo.
                             Estoy convencido de que juntos podemos
-                            crear soluciones innovadoras y marcar la diferencia en cada proyecto.
+                            crear soluciones innovadoras y <span className="text-rose-600 font-semibold"> marcar la diferencia </span> en cada proyecto.
                         </p>
                     </article>
 
@@ -85,6 +86,13 @@ function Main() {
                     </article>
 
                 </section>
+                <Link
+                    link='https://wa.me/541150955469'
+                    imgSrc='./assets/images/whatsapp.png'
+                    boxStyle='w-12 fixed z-10 right-5 bottom-5'
+                    imgStyle='w-16 hover:drop-shadow-green'
+                    arialLabel='Link a WhatsApp'>
+                </Link>
             </main>
 
         </>
