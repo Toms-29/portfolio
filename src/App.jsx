@@ -8,8 +8,6 @@ import { useSelector } from "react-redux"
 
 function App() {
 
-    const lightTheme = useSelector((state) => state.theme.lightTheme)
-
     return (
         <>
             <Header></Header>
