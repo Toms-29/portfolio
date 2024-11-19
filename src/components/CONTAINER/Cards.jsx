@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react"
 
 
-const Cards = ({ cardStyle, textBox, imgBox, srcImg, altText, cardTitle, cardDescripcion }) => {
+const Cards = ({ props }) => {
 
     const [card, setCard] = useState(null)
 
     const cradCargada = () => {
         return (
-            <figure className={cardStyle}>
-                <div className={imgBox}>
-                    <img src={srcImg} alt={altText} />
+            <figure className={props.cardStyle}>
+                <div className={props.imgBox}>
+                    <img src={props.srcImg} alt={props.altText} />
                 </div>
-                <div className={textBox}>
-                    <h3>{cardTitle}</h3>
-                    <p>{cardDescripcion}</p>
+                <div className={props.textBox}>
+                    <h3>{props.cardTitle}</h3>
+                    <p>{props.cardDescripcion}</p>
                 </div>
             </figure >
         )
@@ -28,13 +28,13 @@ const Cards = ({ cardStyle, textBox, imgBox, srcImg, altText, cardTitle, cardDes
     }
 
     useEffect(() => {
-        if (srcImg && cardTitle && cardDescripcion) {
+        if (props.srcImg && props.cardTitle && props.cardDescripcion) {
             setCard(cradCargada())
         } else {
             setCard(cardVacia())
         }
 
-    }, [srcImg, cardTitle, cardDescripcion])
+    }, [props.srcImg, props.cardTitle, props.cardDescripcion])
 
 
     return (
