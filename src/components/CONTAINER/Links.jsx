@@ -1,18 +1,18 @@
 
 
-const Link = ({ link, imgSrc, arialLabel, imgStyle, boxStyle, praphText, textStyle } ) => {
+const Link = ({ props }) => {
 
     return (
         <>
-            <div className={boxStyle}>
+            <div className={props.boxStyle}>
                 <a
-                    href={link}
+                    href={props.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={arialLabel}
+                    aria-label={props.arialLabel}
                 >
-                    {imgSrc && imgStyle ? <img src={imgSrc} className={imgStyle} /> : <p className={textStyle} >{praphText}</p> }
-                    
+                    {props.imgSrc && props.imgStyle ? <img src={props.imgSrc} className={props.imgStyle} /> : <p className={props.textStyle} >{props.praphText}</p>}
+
                 </a>
             </div>
         </>
