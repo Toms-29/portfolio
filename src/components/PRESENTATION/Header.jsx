@@ -1,4 +1,4 @@
-import Link from "../CONTAINER/Links"
+import Link from "../CONTAINER/Link"
 import ThemeButton from "../CONTAINER/ThemeButton.jsx"
 import DownloadButton from "../CONTAINER/DownloadButton"
 import assets from '../../assets.js'

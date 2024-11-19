@@ -1,4 +1,4 @@
-import Link from '../CONTAINER/Links'
+import Link from '../CONTAINER/Link'
 
 
 function Footer() {

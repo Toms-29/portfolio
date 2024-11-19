@@ -1,4 +1,4 @@
-import Link from "../CONTAINER/Links"
+import Link from "../CONTAINER/Link"
 import { useSelector } from 'react-redux'
 import assets from '../../assets'
 
