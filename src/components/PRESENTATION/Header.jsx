@@ -1,9 +1,9 @@
 import Link from "../CONTAINER/Link"
 import ThemeButton from "../CONTAINER/ThemeButton.jsx"
 import DownloadButton from "../CONTAINER/DownloadButton"
-import assets from '../../assets.js'
 import NavBar from "../CONTAINER/NavBar.jsx"
 import Menu from "../CONTAINER/Menu.jsx"
+import assets from '../../assets.js'
 import { useSelector } from 'react-redux'
 
 function Header() {

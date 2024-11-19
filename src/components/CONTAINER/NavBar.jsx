@@ -1,10 +1,10 @@
 
 
-const NavBar = ({ children, styles }) => {
+const NavBar = ({ children, props }) => {
 
     return (
         <>
-            <nav className={styles}>
+            <nav className={props.styles}>
                 {children}
             </nav>
         </>
