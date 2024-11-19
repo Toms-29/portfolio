@@ -1,6 +1,6 @@
 
 
-const DownloadButton = ({ props }) => {
+const DownloadButton = ( props ) => {
 
 
     return (

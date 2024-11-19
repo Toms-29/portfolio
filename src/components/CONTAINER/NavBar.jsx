@@ -1,11 +1,12 @@
 
 
-const NavBar = ({ children, props }) => {
+const NavBar = ( props ) => {
+
 
     return (
         <>
             <nav className={props.styles}>
-                {children}
+                {props.children}
             </nav>
         </>
     )

@@ -1,6 +1,6 @@
 
 
-const Link = ({ props }) => {
+const Link = ( props ) => {
 
     return (
         <>

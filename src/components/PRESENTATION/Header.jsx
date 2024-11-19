@@ -17,8 +17,7 @@ function Header() {
     return (
         <>
             <header className={`${theme === 'light' ? 'bg-sky-600' : headerStyles.darkmode} w-full flex h-24 justify-center items-center border-2 border-b-gray-700 border-r-0 border-t-0 border-l-0`}>
-                <NavBar
-                    styles="w-11/12 sm:w-3/4 max-w-6xl flex justify-between gap-4 ">
+                <NavBar styles="w-11/12 sm:w-3/4 max-w-6xl flex justify-between gap-4">
 
                     <Menu>
                         <Link

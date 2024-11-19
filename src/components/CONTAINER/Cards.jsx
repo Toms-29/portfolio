@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 
-const Cards = ({ props }) => {
+const Cards = ( props ) => {
 
     const [card, setCard] = useState(null)
 

@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { toggleTheme } from '../../STORE/themeSlice.js'
 import assets from "../../assets.js"
 
-const ThemeButton = ({ props }) => {
+const ThemeButton = ( props ) => {
 
     const dispatch = useDispatch()
     const theme = useSelector((state) => state.theme.theme)
