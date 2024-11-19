@@ -1,12 +1,12 @@
 
 
-const DownloadButton = ( {buttonStyle, archivo} ) => {
+const DownloadButton = ({ props }) => {
 
 
     return (
         <>
-            <button className={buttonStyle}>
-                <a href={archivo} download>
+            <button className={props.buttonStyle}>
+                <a href={props.archivo} download>
                     Descargar CV
                 </a>
             </button>
